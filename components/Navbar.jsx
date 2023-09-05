@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import hamburger from '../public/menu.svg';
 import styles from '../styles';
 import search from '../public/search.svg';
 import { navVariants } from '../utils/motion';
@@ -20,9 +21,14 @@ const Navbar = () => (
         alt="search"
         className="w-[24px] h-[24px] object-contain"
       />
-      <h2 className="font-extrabold text-[24px]  text-white">
+      <h2 className="font-extrabold text-[24px]  text-white leading-[30px] ">
         METAVERSUS
       </h2>
+      <Image
+        src={hamburger}
+        alt="menu"
+        className="w-[24px] h-[24px] object-contain"
+      />
     </div>
     navbar
   </motion.nav>
